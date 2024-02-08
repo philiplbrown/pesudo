@@ -1,38 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesudo</title>
     <style>
-        h1:hover{
+        h1:hover {
             color: aquamarine;
             background-color: brown;
         }
-        h3:hover{
+
+        h3:hover {
             color: brown;
             background-color: aquamarine;
         }
-        h2:hover{
+
+        h2:hover {
             color: chartreuse;
             background-color: aquamarine;
         }
+
         /* Focus-styles */
-        .middlle-person:focus{
+        .middlle-person:focus {
             color: chartreuse;
         }
-        .first-person:focus{
+
+        .first-person:focus {
             color: crimson;
         }
-        .third-person:focus{
+
+        .third-person:focus {
             color: blue;
         }
+
         /* visited-styles for <a> tag */
-        a:visited{
+        a:visited {
             color: red;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        /* Child-styles */
+        li{
+            list-style: none;
+            text-decoration: none;
+        }
+        li:first-child {
+            color: blueviolet;
+        }
+
+        li:last-child {
+            color: blueviolet;
+        }
+
+        li:nth-child(2n) {
+            color: brown;
+            background-color: cadetblue;
+        }
+
+        li:nth-child(2n+1) {
+            color: cadetblue;
+            background-color: brown;
+        }
+        /* Pesudo elements styles */
+        h4::before{
+            content: 'Amar ';
+            color: blue;
+        }
+        .special::after{
+            content: ' Valobashi';
+            color: blue;
+        }
+        .box::after{
+            content: ' Valobashi';
+            color: brown;
         }
     </style>
 </head>
+
 <body>
     <h1>Md: Sahin Alam</h1>
     <h2>Md: Mehedi Hasan</h2>
@@ -44,5 +91,26 @@
     <a href="https://stackoverflow.com/questions/22604532/how-to-add-audio-to-a-html-image">stackoverflow te jao</a>
     <a href="https://www.google.com/">Google e jao</a>
     <a href="https://www.underconsideration.com/brandnew/">Brand new e jao</a>
+    <ul>
+        <li>first-person</li>
+        <li>Second-person</li>
+        <li>third-person</li>
+        <li>Forth-person</li>
+        <li>Fivth-person</li>
+        <li>Sixth-person</li>
+        <li>Seventh-person</li>
+        <li>Eighth-person</li>
+    </ul>
+    <!-- pesudo-elements -->
+    <h4 class="box">Sonar Bangla Ami Tomay</h4>
+    <h4 class="special">Sonar Bangla Ami Tomay</h4>
+    <h4 class="box">Sonar Bangla Ami Tomay</h4>
+    <h4 class="special">Sonar Bangla Ami Tomay</h4>
+    <h4 class="box">Sonar Bangla Ami Tomay</h4>
+    <h4 class="special">Sonar Bangla Ami Tomay</h4>
+    <h4 class="box">Sonar Bangla Ami Tomay</h4>
+    <h4 class="special">Sonar Bangla Ami Tomay</h4>
+    <h4 class="box">Sonar Bangla Ami Tomay</h4>
+    <h4 class="special">Sonar Bangla Ami Tomay</h4>
 </body>
 </html>
